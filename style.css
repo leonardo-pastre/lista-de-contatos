@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+body, input {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  color: #E1E1E6;
+  background-color: #1A1924;
+}
+
+ul {
+  list-style: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  padding: 40px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+header h2 {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+nav ul {
+  gap: 16px;
+}
+
+nav ul li {
+  font-size: 24px;
+}
+
+form {
+  margin-top: 24px;
+}
+
+.input-wrapper {
+  gap: 10px;
+  background-color: #24243D;
+  border-radius: 5px;
+  padding: 16px 24px;
+}
+
+.input-wrapper:focus-within {
+  outline: 2px solid white;
+}
+
+.input-wrapper input {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: #E1E1E6;
+}
+
+.input-wrapper input::placeholder {
+  color: #E1E1E6;
+}
+
+.input-wrapper i {
+  font-size: 16px;
+}
+
+.contacts {
+  padding: 16px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.contacts::-webkit-scrollbar {
+  width: 12px;
+}
+
+.contacts::-webkit-scrollbar-thumb {
+  background-color: #282843;
+  border-radius: 999px;
+}
+
+header nav,
+header form,
+.contacts {
+  width: 100%;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.list-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.letter {
+  background-color: var(--color);
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 8px;
+  margin-right: 52px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.person {
+  gap: 16px;
+}
+
+.person img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.person h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.person p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #8C8CBA;
+  margin-top: 6px;
+}
+
+.purple {
+  --color: #633BBC;
+}
+
+.green {
+  --color: #07847E;
+}
+
+.brown {
+  --color: brown;
+}

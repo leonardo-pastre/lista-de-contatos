@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>BoraCodar | Lista de contatos</title>
+</head>
+<body>
+  <header class="container">
+    <nav class="flex items-center">
+      <h2>Meus contatos</h2>
+      <ul class="flex items-center">
+        <li>
+          <i class="ph ph-plus"></i>
+        </li>
+        <li>
+          <i class="ph ph-pencil"></i>
+        </li>
+        <li>
+          <i class="ph ph-trash"></i>
+        </li>
+      </ul>
+    </nav>
+
+    <form>
+      <div class="flex align-items input-wrapper">
+        <label class="sr-only" for="filter">Busque por nome ou dados de contato</label>
+        <i class="ph ph-magnifying-glass"></i>
+        <input 
+          type="text" 
+          name="filter" 
+          id="filter"
+          placeholder="Busque por nome ou dados de contato"
+        >
+      </div>
+    </form>
+  </header>
+
+  <section class="contacts">
+    <div class="list-wrapper flex">
+      <div class="letter purple">A</div>
+      <ul>
+        <li>
+          <div class="flex person">
+            <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="">
+            <div class="contact">
+              <h3>Alvaro</h3>
+              <p>(00) 00000-0000</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="list-wrapper flex">
+      <div class="letter green">B</div>
+      <ul>
+        <li>
+          <div class="flex person">
+            <img src="https://randomuser.me/api/portraits/women/15.jpg" alt="">
+            <div class="contact">
+              <h3>Bia</h3>
+              <p>(00) 00000-0000</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex person">
+            <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="">
+            <div class="contact">
+              <h3>Brenda</h3>
+              <p>(00) 00000-0000</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="list-wrapper flex">
+      <div class="letter brown">C</div>
+      <ul>
+        <li>
+          <div class="flex person">
+            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="">
+            <div class="contact">
+              <h3>Carol</h3>
+              <p>(00) 00000-0000</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex person">
+            <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="">
+            <div class="contact">
+              <h3>Carlos</h3>
+              <p>(00) 00000-0000</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex person">
+            <img src="https://randomuser.me/api/portraits/men/25.jpg" alt="">
+            <div class="contact">
+              <h3>Caique</h3>
+              <p>(00) 00000-0000</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex person">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="">
+            <div class="contact">
+              <h3>Clayton</h3>
+              <p>(00) 00000-0000</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex person">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="">
+            <div class="contact">
+              <h3>Carla</h3>
+              <p>(00) 00000-0000</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</body>
+</html>
